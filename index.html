@@ -12,6 +12,7 @@
 <body>
     <header>
         <div class="contentWrap">
+
             <logo src="img/kitlogo.svg">
                 <!-- 'logo' is a placeholder and will be replaced using JS -->
             </logo>
@@ -20,17 +21,34 @@
                     <li>Home</li>
                     <li>Impressum</li>
                     <li>Datenschutz</li>
-                    <li>Sitemap</li>
-                    <li>KIT</li>
+                    <!-- <li>Sitemap</li> -->
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 299.4 295.7" width="299.4px" height="295.7px">
+                            <title>KIT</title>
+                            <polygon points="299.3,295.7 299.3,295.6 299.3,295.6 "></polygon>
+                            <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 "></polygon>
+                            <path d="M67.9,108.1c-15.6,18.9-28.8,39.6-39.3,61.7l270.6,125.9L67.9,108.1z"></path>
+                            <path d="M299.2,295.6L173,27.2c-22.2,10.2-43,23.1-62,38.4l188.3,230.1L299.2,295.6z">
+                            </path>
+                            <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 299.3,295.5 "></polygon>
+                            <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 299.3,295.5 "></polygon>
+                            <path d="M9.3,223.2c-6.1,23.7-9.2,48-9.3,72.5h299.2L9.3,223.2z"></path>
+                            <path
+                                d="M299.3,295.6l0.1-295.6c-0.8,0-1.5-0.1-2.2-0.1c-23.6,0-47,2.8-69.9,8.4L299.3,295.6L299.3,295.6z">
+                            </path>
+                        </svg>
+                        KIT
+                    </li>
                 </ul>
                 <ul>
-                    <li>Dienste</li>
-                    <li>Leitlinien</li>
-                    <li>Forschungsdaten</li>
-                    <li>Projekte</li>
-                    <li>Netzwerke</li>
-                    <li>Über uns</li>
-                    <li>News-Archiv</li>
+                    <li active>Nutzungsbedingungen</li>
+                    <li>Dienstbeschreibung</li>
+                    <li>Registrierung</li>
+                    <li class='login'>
+                        Login
+                    </li>
+                    <li style='font-family: kit-icons;'></li>
                 </ul>
             </nav>
         </div>
@@ -38,36 +56,61 @@
     <main>
         <div class="contentWrap">
             <div class="banner">
-                <div class="caption">Serviceteam RDM@KIT</div>
+                <div class="caption">Das Forschungsdaten Repo für das KIT</div>
             </div>
             <breadcrumbs> </breadcrumbs>
             <div class="content">
                 <h1>RADAR4KIT</h1>
-                <p class='summary'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                    accusamus obcaecati reiciendis optio minima labore nisi doloremque sed qui.</p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut culpa dolorem reprehenderit
-                    consectetur repudiandae id consequatur voluptas in, modi nesciunt dolorum ea esse soluta sapiente
-                    corrupti iusto eaque quis veniam sit harum doloribus dolor? Ducimus deserunt voluptatibus nostrum
-                    sequi corrupti blanditiis illo aliquam praesentium! Repellendus eligendi ad consectetur ducimus
-                    possimus impedit, quisquam tenetur quos fugiat et. Ullam deleniti quos tempora rerum, eligendi sunt
-                    modi sit beatae, voluptatem unde repellendus iste! Blanditiis esse autem repellendus sapiente dolor
-                    magnam excepturi, nulla recusandae ipsam qui. Ullam cupiditate nulla voluptatibus esse similique
-                    nobis? Aspernatur voluptatem assumenda dolor alias mollitia quaerat dolorem fuga sit expedita
-                    molestias optio blanditiis unde repudiandae saepe iure eveniet, distinctio aperiam tempora velit ab.
-                    Aperiam incidunt perferendis vero obcaecati laboriosam odit vitae maiores voluptatem, provident nisi
-                    quas necessitatibus? Eum, ex. Et, rerum explicabo. Velit officiis facilis id laboriosam autem,
-                    consequatur amet numquam beatae inventore praesentium repellendus quos, ea neque incidunt voluptas
-                    sunt! Explicabo vel, consequuntur expedita cum temporibus vitae odio, dicta amet pariatur obcaecati
-                    error cupiditate aspernatur dolorem at reprehenderit dignissimos, labore inventore earum fugiat
-                    quisquam? Maiores dicta suscipit debitis dolor totam fugiat temporibus quasi unde? Soluta deserunt
-                    maxime odit, aut corporis itaque, pariatur qui reprehenderit asperiores commodi quisquam sint ea.
+                <p class='summary'>RADAR4KIT
+                    ermöglicht es Forschenden des KIT ihre Forschungsdaten in einem
+                    Repositorium zu verwalten, zu archivieren, in Projektteams zu teilen und
+                    zu publizieren.
                 </p>
+                <div class='searchBar'>
+                    <label>
+                        Suche
+                    </label>
+                    <input type="text" name="" id="">
+                </div>
+                <p>
+                    Über RADAR4KIT können Sie Forschungsdaten aus abgeschlossenen
+                    wissenschaftlichen Studien und Projekten&nbsp;zu Datenpaketen
+                    zusammenstellen, mit Metadaten beschreiben, dauerhaft speichern und
+                    archivieren oder bei Bedarf öffentlich zugänglich machen. Publizierte
+                    Daten erhalten einen persistenten Identifier (DOI) und sind damit
+                    international&nbsp;auffindbar und außerdem in KITopen&nbsp;
+                    nachgewiesen. RADAR4KIT stellt neben den etablierten Fachrepositorien,
+                    die z.B. in <a href='https://www.re3data.org'>re3data.org</a> zu finden sind, ein generisches
+                    Angebot
+                    des KIT dar.
+                </p>
+                <p>Betreiber ist
+                    das Karlsruher Institut für Technologie (KIT). RADAR4KIT setzt auf dem
+                    von FIZ Karlsruhe angebotenen Dienst RADAR auf. Die Speicherung der
+                    Daten findet ausschließlich auf IT-Infrastruktur des KIT am Steinbuch
+                    Centre for Computing (SCC) statt.
+                </p>
+
+
             </div>
         </div>
     </main>
     <footer>
-        <div class="contentWrap"></div>
+        <div class="contentWrap">
+            <!-- <div class="footerBox">
+                FELIX!
+            </div> -->
+            <div class="footerBox contactBox">
+                <img src="">
+                <h1>Ansprechpartner</h1>
+                <span>
+                    Dr.-Ing. Felix Back<br>
+                    Steinbuch Centre for Computing (SCC)<br>
+                    <a href='mailto:bach@kit.edu'>bach@kit.edu</a>
+                </span>
+
+            </div>
+        </div>
     </footer>
     <div class="subfooter">
         <div class="contentWrap">

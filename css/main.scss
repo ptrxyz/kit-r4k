@@ -1,12 +1,22 @@
 $max_width: 1720px;
-$max_width: 900px;
-$main_accent: #009682;
+$max_width: 1200px;
+$main_accent: rgb(0, 119, 85);
 
 :root {
     --main-bg-color: #{$main_accent};
     --main-accent: #{$main_accent};
     --max-width: #{$max_width};
     --main-gray: rgb(64, 64, 64);
+}
+
+@font-face {
+    font-family: "kit-icons";
+    src: url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.ttf?2haur7") format("truetype"),
+        url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.woff?2haur7") format("woff"),
+        url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.svg?2haur7#kit-icons") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
 }
 
 body {
@@ -59,6 +69,7 @@ header {
     nav {
         height: 80px;
         font-size: 1em;
+        font-weight: 300;
 
         ul {
             height: 50%;
@@ -67,6 +78,8 @@ header {
             display: flex;
             flex-direction: row;
             align-items: center;
+            align-content: center;
+            justify-items: center;
             justify-content: flex-end;
         }
 
@@ -75,18 +88,46 @@ header {
         }
 
         li {
-            display: inline-block;
+            display: inline;
             margin: 0px;
             padding: 0px;
             cursor: pointer;
 
             &:hover {
                 color: var(--main-accent);
+
+                svg {
+                    fill: var(--main-accent);
+                }
+            }
+
+            &[active] {
+                border-bottom: 3px solid var(--main-accent);
+            }
+
+            svg {
+                height: 0.75em;
+                width: 0.75em;
+            }
+        }
+
+        .login {
+            background-color: var(--main-accent);
+            border: 2px solid var(--main-accent);
+            color: white;
+            text-transform: uppercase;
+            font-size: 80%;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+
+            &:hover {
+                background-color: white;
+                color: var(--main-accent);
             }
         }
 
         li + li {
-            margin-left: 10px;
+            margin-left: 20px;
         }
     }
 }
@@ -94,6 +135,15 @@ header {
 main {
     background-color: white;
     height: 130vh;
+
+    a {
+        color: var(--main-accent);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 
     .contentWrap {
         flex-direction: column;
@@ -142,6 +192,18 @@ main {
             }
         }
 
+        .searchBar {
+            text-align: center;
+            margin: 75px;
+
+            input {
+                border: 1px solid rgb(230, 230, 230);
+                border-bottom: 4px solid $main_accent;
+                text-align: center;
+                font-size: larger;
+            }
+        }
+
         .summary {
             font-weight: 700;
         }
@@ -152,8 +214,46 @@ footer {
     height: 300px;
     background-color: #f2f2f2;
     border-top: 1px solid rgb(230, 230, 230);
+
     .contentWrap {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .footerBox {
+            // background-color: crimson;
+        }
+
+        .footerBox + .footerBox {
+            margin-left: 50px;
+        }
+
+        .contactBox {
+            font-size: 16px;
+
+            img {
+                float: left;
+            }
+
+            h1 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+
+                &::after {
+                    content: "";
+                    width: 80px;
+                    display: block;
+                    transform: translateX(0) scaleX(1) translateY(4px);
+                    border-bottom: 4px solid var(--main-bg-color);
+                }
+            }
+
+            a {
+                color: var(--main-accent);
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
     }
 }
 
