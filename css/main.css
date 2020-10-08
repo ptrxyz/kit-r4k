@@ -1,8 +1,16 @@
 :root {
-  --main-bg-color: #009682;
-  --main-accent: #009682;
-  --max-width: 900px;
+  --main-bg-color: #007755;
+  --main-accent: #007755;
+  --max-width: 1200px;
   --main-gray: rgb(64, 64, 64);
+}
+
+@font-face {
+  font-family: "kit-icons";
+  src: url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.ttf?2haur7") format("truetype"), url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.woff?2haur7") format("woff"), url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.svg?2haur7#kit-icons") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
 }
 
 body {
@@ -10,6 +18,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans;
   font-size: 16px;
+  min-height: 100vh;
 }
 
 .contentWrap {
@@ -31,6 +40,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.searchBar {
+  position: relative;
+}
+
+.searchBar label {
+  position: absolute;
+  color: gray;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  font-size: small;
 }
 
 header {
@@ -68,6 +89,7 @@ header logo[small] svg .logo-text {
 header nav {
   height: 80px;
   font-size: 1em;
+  font-weight: 300;
 }
 
 header nav ul {
@@ -84,6 +106,9 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -94,7 +119,7 @@ header nav ul + ul {
 }
 
 header nav li {
-  display: inline-block;
+  display: inline;
   margin: 0px;
   padding: 0px;
   cursor: pointer;
@@ -104,13 +129,49 @@ header nav li:hover {
   color: var(--main-accent);
 }
 
+header nav li:hover svg {
+  fill: var(--main-accent);
+}
+
+header nav li[active] {
+  border-bottom: 3px solid var(--main-accent);
+}
+
+header nav li svg {
+  height: 0.75em;
+  width: 0.75em;
+}
+
+header nav .login {
+  background-color: var(--main-accent);
+  border: 2px solid var(--main-accent);
+  color: white;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+}
+
+header nav .login:hover {
+  background-color: white;
+  color: var(--main-accent);
+}
+
 header nav li + li {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 main {
   background-color: white;
-  height: 130vh;
+}
+
+main a {
+  color: var(--main-accent);
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 main .contentWrap {
@@ -166,6 +227,18 @@ main .content h1::after {
   border-bottom: 4px solid var(--main-bg-color);
 }
 
+main .content .searchBar {
+  text-align: center;
+  margin: 75px;
+}
+
+main .content .searchBar input {
+  border: 1px solid #e6e6e6;
+  border-bottom: 4px solid #007755;
+  text-align: center;
+  font-size: larger;
+}
+
 main .content .summary {
   font-weight: 700;
 }
@@ -177,10 +250,49 @@ footer {
 }
 
 footer .contentWrap {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .contentWrap .footerBox + .footerBox {
+  margin-left: 50px;
+}
+
+footer .contentWrap .contactBox {
+  font-size: 16px;
+}
+
+footer .contentWrap .contactBox img {
+  float: left;
+}
+
+footer .contentWrap .contactBox h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer .contentWrap .contactBox h1::after {
+  content: "";
+  width: 80px;
+  display: block;
+  -webkit-transform: translateX(0) scaleX(1) translateY(4px);
+          transform: translateX(0) scaleX(1) translateY(4px);
+  border-bottom: 4px solid var(--main-bg-color);
+}
+
+footer .contentWrap .contactBox a {
+  color: var(--main-accent);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .subfooter {

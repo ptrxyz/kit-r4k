@@ -24,6 +24,7 @@ body {
     margin: 0;
     font-family: "Roboto", sans;
     font-size: 16px;
+    min-height: 100vh;
 }
 
 .contentWrap {
@@ -36,6 +37,17 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.searchBar {
+    position: relative;
+
+    label {
+        position: absolute;
+        color: gray;
+        transform: translateY(-100%);
+        font-size: small;
+    }
 }
 
 header {
@@ -134,7 +146,6 @@ header {
 
 main {
     background-color: white;
-    height: 130vh;
 
     a {
         color: var(--main-accent);
