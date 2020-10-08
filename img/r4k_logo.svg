@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="85.334076mm"
+   height="67.287636mm"
+   viewBox="0 0 85.334076 67.287636"
+   version="1.1"
+   id="svg1469"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="r4k_logo.svg">
+  <defs
+     id="defs1463" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="114.22531"
+     inkscape:cy="332.6743"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata1466">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(7.1372721,-20.028808)">
+    <g
+       id="g1490"
+       transform="translate(-58.022045,303.69639)">
+      <g
+         id="g1461">
+        <g
+           id="g1441-0"
+           transform="matrix(1.3019972,0,0,1.3019972,-150.50913,-116.91771)"
+           style="stroke-width:0.768051">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.1166px;line-height:1.25;font-family:D-DIN;-inkscape-font-specification:'D-DIN, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.43753px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#0e9a83;fill-opacity:1;stroke:none;stroke-width:0.203213;stroke-opacity:1"
+             x="194.4767"
+             y="-97.215462"
+             id="text1375-4"
+             transform="scale(1.0324228,0.96859542)"><tspan
+               sodipodi:role="line"
+               id="tspan1373-8"
+               x="194.69547"
+               y="-97.215462"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.1166px;font-family:D-DIN;-inkscape-font-specification:'D-DIN, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0e9a83;fill-opacity:1;stroke:none;stroke-width:0.203213;stroke-opacity:1">RADAR</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:19.0394px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0.441854px;word-spacing:0px;text-anchor:middle;fill:#0e9a83;fill-opacity:1;stroke-width:0.203213"
+             x="173.44836"
+             y="-76.392052"
+             id="text1261-7"><tspan
+               sodipodi:role="line"
+               id="tspan1259-0"
+               x="173.6693"
+               y="-76.392052"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:condensed;font-size:19.0394px;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std, Heavy Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0e9a83;fill-opacity:1;stroke-width:0.203213">4</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:22.0879px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0.441854px;word-spacing:0px;text-anchor:middle;stroke-width:0.203212"
+             x="200.66273"
+             y="-76.392052"
+             id="text1265-8"><tspan
+               sodipodi:role="line"
+               id="tspan1263-6"
+               x="200.88367"
+               y="-76.392052"
+               style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:22.0879px;font-family:'Helvetica Neue LT Std';-inkscape-font-specification:'Helvetica Neue LT Std, Heavy';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.203212">KIT</tspan></text>
+        </g>
+        <g
+           id="g1447"
+           transform="translate(-94.666866,-147.80005)">
+          <g
+             id="g1427"
+             transform="matrix(1.1754341,0,0,1.1754341,-25.28775,13.939838)"
+             style="stroke-width:0.850749">
+            <path
+               id="path1374"
+               style="fill:#d4d4d4;fill-opacity:1;stroke-width:0.595522;stroke-linecap:round"
+               d="m 182.99932,-124.38148 -3.03237,5.61516 c 6.36044,3.43528 10.04278,10.00261 10.04538,16.846 h 6.38669 c -0.003,-9.12461 -4.91906,-17.88072 -13.3997,-22.46116 z m -6.06422,11.23032 -3.03238,5.61516 c 2.1202,1.14513 3.34784,3.33448 3.34863,5.61568 h 6.37998 c -0.002,-4.56231 -2.45584,-8.94061 -6.69623,-11.23084 z" />
+            <path
+               id="path1346"
+               style="fill:#d4d4d4;fill-opacity:1;stroke-width:0.595523;stroke-linecap:round"
+               d="m 154.025,-111.01717 5.61519,3.03231 5.61515,3.03231 c 0.30475,-0.56451 0.69289,-1.07983 1.15129,-1.52859 0.0599,-0.0579 0.12066,-0.11488 0.18271,-0.17051 1.55907,-1.40976 3.71235,-1.9614 5.7572,-1.4749 l -1.47604,6.20625 3.46153,-5.36071 c 0.79907,0.51674 1.47248,1.20563 1.97091,2.01625 l 5.43361,-3.3466 c -0.99694,-1.61993 -2.34338,-2.99651 -3.9408,-4.02913 l 3.46151,-5.36071 c 2.39668,1.54856 4.41693,3.61331 5.91292,6.04317 l 5.43477,-3.34889 c -2.34983,-3.81527 -5.66254,-6.94479 -9.60518,-9.07397 -1.96273,-1.05975 -4.05587,-1.85769 -6.22599,-2.37343 -11.24033,-2.67196 -22.87395,2.539 -28.36393,12.70485 m -1.09863,2.30814 c -5.04415,12.099407 -0.1036,26.052696 11.43033,32.282241 l 3.03227,-5.615172 c -8.65055,-4.672176 -12.35594,-15.137279 -8.57273,-24.211899 z m 10.71718,-4.37476 c 4.67631,-4.23018 11.1358,-5.88635 17.27059,-4.4281 l -1.4772,6.20847 c -4.08922,-0.97191 -8.39481,0.13176 -11.51222,2.95102 z m 1.06257,9.28555 c -2.52207,6.0497 -0.0519,13.026336 5.71516,16.141112 l 3.03232,-5.615176 c -2.88348,-1.557384 -4.11859,-5.045686 -2.85759,-8.070546 z"
+               sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+          </g>
+          <circle
+             style="opacity:1;fill:#0e9a83;fill-opacity:1;stroke:none;stroke-width:0.132292;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+             id="path1414-2"
+             cx="175.55927"
+             cy="-105.86076"
+             r="3.3072917" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
