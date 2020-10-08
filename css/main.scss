@@ -66,12 +66,12 @@ header {
         display: inline-flex;
         align-items: center;
 
-        width: 150px;
+        width: 120px;
 
         &[small] {
             svg {
-                margin-top: 10px;
-                width: 100px;
+                // margin-top: 10px;
+                height: 70px;
                 .logo-text {
                     visibility: hidden;
                 }
