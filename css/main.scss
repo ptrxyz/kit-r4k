@@ -7,6 +7,7 @@ $main_accent: rgb(0, 119, 85);
     --main-accent: #{$main_accent};
     --max-width: #{$max_width};
     --main-gray: rgb(64, 64, 64);
+    --header-height: 120px;
 }
 
 @font-face {
@@ -54,7 +55,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: var(--header-height);
     position: fixed;
     z-index: 1;
     box-shadow: rgba(64, 64, 64, 0.5) 0 0 5px;
@@ -146,6 +147,7 @@ header {
 
 main {
     background-color: white;
+    min-height: calc(100vh - 351px); // footer height + subfooter height + border = 351px
 
     a {
         color: var(--main-accent);
