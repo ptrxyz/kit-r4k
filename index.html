@@ -5,48 +5,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serviceteam RDM@KIT | RADAR4KIT</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type='text/css' href="css/main.css" />
+    <link rel='stylesheet' type='text/css'
+        href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'>
     <script src="script.js"></script>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" sizes="any">
 </head>
 
 <body>
     <header>
         <div class="contentWrap">
-            <logo src="img/r4k_logo.svg">
-                <!-- 'logo' is a placeholder and will be replaced using JS -->
-            </logo>
+            <a href="index.html">
+                <logo src="img/r4k_logo_fonts2paths.svg">
+                    <!-- 'logo' is a placeholder and will be replaced using JS -->
+                </logo>
+            </a>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Impressum</li>
-                    <li>Datenschutz</li>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                            y="0px" viewBox="0 0 299.4 295.7" width="299.4px" height="295.7px">
-                            <title>KIT</title>
-                            <polygon points="299.3,295.7 299.3,295.6 299.3,295.6 "></polygon>
-                            <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 "></polygon>
-                            <path d="M67.9,108.1c-15.6,18.9-28.8,39.6-39.3,61.7l270.6,125.9L67.9,108.1z"></path>
-                            <path d="M299.2,295.6L173,27.2c-22.2,10.2-43,23.1-62,38.4l188.3,230.1L299.2,295.6z">
-                            </path>
-                            <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 299.3,295.5 "></polygon>
-                            <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 299.3,295.5 "></polygon>
-                            <path d="M9.3,223.2c-6.1,23.7-9.2,48-9.3,72.5h299.2L9.3,223.2z"></path>
-                            <path
-                                d="M299.3,295.6l0.1-295.6c-0.8,0-1.5-0.1-2.2-0.1c-23.6,0-47,2.8-69.9,8.4L299.3,295.6L299.3,295.6z">
-                            </path>
-                        </svg>
-                        KIT
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.kit.edu/impressum.php">Impressum</a></li>
+                    <li><a href="https://www.kit.edu/datenschutz.php">Datenschutz</a></li>
+                    <li><a href="https://www.kit.edu">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 299.4 295.7" width="299.4px" height="295.7px">
+                                <title>KIT</title>
+                                <polygon points="299.3,295.7 299.3,295.6 299.3,295.6 "></polygon>
+                                <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 "></polygon>
+                                <path d="M67.9,108.1c-15.6,18.9-28.8,39.6-39.3,61.7l270.6,125.9L67.9,108.1z"></path>
+                                <path d="M299.2,295.6L173,27.2c-22.2,10.2-43,23.1-62,38.4l188.3,230.1L299.2,295.6z">
+                                </path>
+                                <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 299.3,295.5 "></polygon>
+                                <polygon points="299.3,295.6 299.3,295.6 299.3,295.6 299.3,295.5 "></polygon>
+                                <path d="M9.3,223.2c-6.1,23.7-9.2,48-9.3,72.5h299.2L9.3,223.2z"></path>
+                                <path
+                                    d="M299.3,295.6l0.1-295.6c-0.8,0-1.5-0.1-2.2-0.1c-23.6,0-47,2.8-69.9,8.4L299.3,295.6L299.3,295.6z">
+                                </path>
+                            </svg>
+                            KIT</a>
                     </li>
                 </ul>
                 <ul>
-                    <li active>Nutzungsbedingungen</li>
-                    <li>Dienstbeschreibung</li>
-                    <li>Registrierung</li>
-                    <li class='login'>
-                        Login
+                    <li rolling><a>Nutzungsbedingungen</a>
+                        <rollup>
+                            <a href="tos.html#receiver">Für Datennutzer</a>|
+                            <a href="tos.html#giver">Für Datengeber</a>
+                        </rollup>
                     </li>
-                    <li style='font-family: kit-icons;'></li>
+                    <li><a href="description.html">Dienstbeschreibung</a></li>
+                    <li><a href="https://radar.kit.edu/radar/de/registration">Registrierung</a></li>
+                    <li class='login'>
+                        <a href="https://radar.kit.edu/radar-backend/login-page">Login</a>
+                    </li>
+                    <li style='font-family: kit-icons;' fgactive><a href="index.html">&#xe90c;</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,7 +64,7 @@
     <main>
         <div class="contentWrap">
             <div class="banner">
-                <div class="caption">Das Forschungsdaten Repo für das KIT</div>
+                <div class="caption">Das Forschungsdaten Repositorium für das KIT</div>
             </div>
             <breadcrumbs> </breadcrumbs>
             <div class="content">
@@ -64,12 +74,22 @@
                     Repositorium zu verwalten, zu archivieren, in Projektteams zu teilen und
                     zu publizieren.
                 </p>
-                <div class='searchBar'>
-                    <label>
-                        Suche
-                    </label>
-                    <input type="text" name="" id="">
-                </div>
+                <form class='searchBar' action='https://radar.kit.edu/radar/en/search'>
+                    <div>
+                        <label for="searchterm" id='lbl_st'>
+                            Suche
+                        </label>
+                        <input type="text" name="query" id="searchterm"><button class="searchsubmit"
+                            type="submit">&#xe91d;</button>
+                    </div>
+                    <div class='sub'>
+                        <span>Suchen in</span>
+                        <input type="radio" id="st_meta" name="searchBy" value="metadata" checked>
+                        <label for="st_meta">Metadaten</label>
+                        <input type="radio" id="st_doi" name="searchBy" value="doi">
+                        <label for="st_doi">DOI</label>
+                    </div>
+                </form>
                 <p>
                     Über RADAR4KIT können Sie Forschungsdaten aus abgeschlossenen
                     wissenschaftlichen Studien und Projekten&nbsp;zu Datenpaketen
@@ -88,8 +108,6 @@
                     Daten findet ausschließlich auf IT-Infrastruktur des KIT am Steinbuch
                     Centre for Computing (SCC) statt.
                 </p>
-
-
             </div>
         </div>
     </main>
@@ -103,7 +121,7 @@
                 <div>
                     <h1>Ansprechpartner</h1>
                     <span>
-                        Dr.-Ing. Felix Back<br>
+                        Dr.-Ing. Felix Bach<br>
                         Steinbuch Centre for Computing (SCC)<br>
                         <a href='mailto:bach@kit.edu'>bach@kit.edu</a>
                     </span>
