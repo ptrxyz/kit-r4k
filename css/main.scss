@@ -1,6 +1,8 @@
 $max_width: 1720px;
 $max_width: 1200px;
 $main_accent: rgb(0, 119, 85);
+$main_accent: #009682;
+$main_accent: #00876c;
 
 :root {
     --main-bg-color: #{$main_accent};
@@ -42,12 +44,72 @@ body {
 
 .searchBar {
     position: relative;
+    text-align: center;
+    margin: 75px;
 
-    label {
+    #searchterm {
+        border: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid $main_accent;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        font-size: larger;
+        height: 40px;
+        box-sizing: border-box;
+        outline: none;
+        display: inline-block;
+
+        &:focus {
+            border-color: $main_accent;
+        }
+    }
+
+    .searchsubmit {
+        transform: translateY(-3px);
+        box-sizing: border-box;
+        font-family: "kit-icons" !important;
+        display: inline-block;
+        outline: none;
+        width: 70px;
+        height: 40px;
+        background-color: var(--main-accent);
+        color: white;
+        border: 2px solid var(--main-accent);
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--main-accent);
+            background-color: white;
+        }
+    }
+
+    #lbl_st {
         position: absolute;
         color: gray;
         transform: translateY(-100%);
         font-size: small;
+    }
+
+    .sub {
+        margin-top: 10px;
+
+        & > span {
+            color: gray;
+            font-size: smaller;
+            padding-right: 10px;
+        }
+
+        input {
+            width: 1.4em;
+            height: 1.4em;
+            transform: translateY(1px);
+        }
+
+        label {
+            font-weight: bolder;
+        }
     }
 }
 
@@ -101,10 +163,16 @@ header {
         }
 
         li {
-            display: inline;
+            display: inline-flex;
             margin: 0px;
             padding: 0px;
             cursor: pointer;
+
+            position: relative;
+            height: 100%;
+            align-content: center;
+
+            border-bottom: 3px solid transparent;
 
             &:hover {
                 color: var(--main-accent);
@@ -112,6 +180,10 @@ header {
                 svg {
                     fill: var(--main-accent);
                 }
+            }
+
+            &[fgactive-disabled] {
+                color: var(--main-accent);
             }
 
             &[active] {
@@ -122,6 +194,62 @@ header {
                 height: 0.75em;
                 width: 0.75em;
             }
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+                display: flex;
+                align-items: center;
+            }
+
+            &[rolling]:hover {
+                &:after {
+                    content: "";
+                    border: 10px solid var(--main-accent);
+                    border-right: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-top: none;
+                    position: absolute;
+                    bottom: -2px;
+                    left: calc(50% - 8px);
+                    z-index: 100;
+                }
+            }
+
+            rollup {
+                width: 300px;
+                padding: 20px;
+                box-sizing: border-box;
+                position: absolute;
+                top: 40px;
+                left: -70px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 30px;
+                overflow: hidden;
+                opacity: 1;
+                background-color: #f3f3f3;
+                border: 2px solid var(--main-accent);
+                box-shadow: rgba(64, 64, 64, 0.5) 0 0 5px;
+                color: black;
+                font-weight: normal;
+                z-index: 99;
+
+                transform: scaleY(0);
+                opacity: 0;
+                transition: transform 0.13s ease, opacity 0.2s ease;
+                transform-origin: top;
+
+                a:hover {
+                    color: var(--main-accent);
+                }
+            }
+
+            &:hover rollup {
+                transform: scaleY(1);
+                opacity: 1;
+            }
         }
 
         .login {
@@ -131,11 +259,21 @@ header {
             text-transform: uppercase;
             font-size: 80%;
             letter-spacing: 1px;
-            padding: 4px 10px;
+            padding: 4px 12px;
+            height: 70%;
 
             &:hover {
                 background-color: white;
                 color: var(--main-accent);
+
+                a {
+                    color: var(--main-accent);
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
             }
         }
 
@@ -202,18 +340,6 @@ main {
                 display: block;
                 transform: translateX(0) scaleX(1);
                 border-bottom: 4px solid var(--main-bg-color);
-            }
-        }
-
-        .searchBar {
-            text-align: center;
-            margin: 75px;
-
-            input {
-                border: 1px solid rgb(230, 230, 230);
-                border-bottom: 4px solid $main_accent;
-                text-align: center;
-                font-size: larger;
             }
         }
 
