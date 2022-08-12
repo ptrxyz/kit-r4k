@@ -13,10 +13,13 @@ $main_accent: #00876c;
 }
 
 @font-face {
-    font-family: "kit-icons";
-    src: url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.ttf?2haur7") format("truetype"),
-        url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.woff?2haur7") format("woff"),
-        url("https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.svg?2haur7#kit-icons") format("svg");
+    font-family: 'kit-icons';
+    src: url('https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.ttf?2haur7')
+            format('truetype'),
+        url('https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.woff?2haur7')
+            format('woff'),
+        url('https://static.scc.kit.edu/kit-2020/fonts/kit-icons/kit-icons.svg?2haur7#kit-icons')
+            format('svg');
     font-style: normal;
     font-weight: normal;
     font-display: block;
@@ -25,7 +28,7 @@ $main_accent: #00876c;
 body {
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans;
+    font-family: 'Roboto', sans;
     font-size: 16px;
     min-height: 100vh;
 }
@@ -67,7 +70,7 @@ body {
     .searchsubmit {
         transform: translateY(-3px);
         box-sizing: border-box;
-        font-family: "kit-icons" !important;
+        font-family: 'kit-icons' !important;
         display: inline-block;
         outline: none;
         width: 70px;
@@ -204,7 +207,7 @@ header {
 
             &[rolling]:hover {
                 &:after {
-                    content: "";
+                    content: '';
                     border: 10px solid var(--main-accent);
                     border-right: 10px solid transparent;
                     border-left: 10px solid transparent;
@@ -285,7 +288,9 @@ header {
 
 main {
     background-color: white;
-    min-height: calc(100vh - 351px); // footer height + subfooter height + border = 351px
+    min-height: calc(
+        100vh - 351px
+    ); // footer height + subfooter height + border = 351px
 
     a {
         color: var(--main-accent);
@@ -301,7 +306,7 @@ main {
     }
 
     .banner {
-        background-image: url("../img/banner2.png");
+        background-image: url('../img/banner2.png');
         height: 140px;
         margin-top: 120px;
         background-size: 100% 100%;
@@ -335,7 +340,7 @@ main {
             color: var(--main-gray);
 
             &::after {
-                content: "";
+                content: '';
                 width: 80px;
                 display: block;
                 transform: translateX(0) scaleX(1);
@@ -350,7 +355,7 @@ main {
 }
 
 footer {
-    height: 300px;
+    height: 330px;
     background-color: #f2f2f2;
     border-top: 1px solid rgb(230, 230, 230);
 
@@ -388,7 +393,7 @@ footer {
                 margin-bottom: 20px;
 
                 &::after {
-                    content: "";
+                    content: '';
                     width: 80px;
                     display: block;
                     transform: translateX(0) scaleX(1) translateY(4px);
